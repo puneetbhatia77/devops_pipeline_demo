@@ -8,7 +8,7 @@ public class SampleResource {
 
     @RequestMapping("/")
     public String hello() {
-        return "Hello World!";
+        return "Welcome to Devops pipeline demo with docker !!";
     }
 
 }
