@@ -36,7 +36,7 @@ pipeline {
 	             	CONTAINER=devops_pipeline_demo
 		OLD="$(docker ps --all --quiet --filter=name="$CONTAINER")"
 		if [ -n "$OLD" ]; then
-		  docker stop $OLD && sudo docker rm $OLD
+		  docker stop $OLD && docker rm $OLD
 		fi
 
 		echo ""
